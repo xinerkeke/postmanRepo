@@ -14,7 +14,7 @@
 						"id": "9487d394-46ea-4fd2-bf55-bea89c182aee",
 						"exec": [
 							"if (iteration%2 === 0) {",
-							"    tests[\"Status code is 401\"] = responseCode.code === 301;",
+							"    tests[\"Status code is 401\"] = responseCode.code === 401;",
 							"}",
 							"else {",
 							"    tests[\"Status code is 200\"] = responseCode.code === 200;   ",
@@ -87,7 +87,7 @@
 					"script": {
 						"id": "37739263-2873-4417-abd1-fe312f137dfd",
 						"exec": [
-							"tests[\"Status code is 200\"] = responseCode.code === 300;",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
 							"//postman.setNextRequest(\"Request null\") "
 						],
 						"type": "text/javascript"
